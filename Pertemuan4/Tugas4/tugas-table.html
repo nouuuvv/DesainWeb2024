@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        /* .ilang {
+            border-left:#f2f2f2;
+        } */
+        caption {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        } 
+    </style>
+</head>
+
+<body>
+    <center>
+        <table border="1" cellpasing="0" cellpadding="5">
+            <caption><strong>Daftar Impian Saya</strong></caption>
+
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            <colgroup></colgroup>
+            
+            <colgroup></colgroup>
+            <colgroup colspan="5"></colgroup>
+
+            <colgroup></colgroup>
+            <colgroup colspan="5"></colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2">No</th>
+                    <th rowspan="2">Sumber Dana / Kebutuhan</th>
+                    <th colspan="2">Target Waktu</th>
+                    <th colspan="2">Anggaran Dana (RP)</th>
+                </tr>
+
+                <tr>
+
+                    <th>Tahun</th>
+                    <th>Bulan</th>
+                    <th>Masuk</th>
+                    <th>Keluar</th>
+                </tr>
+                <tr>
+                    <th class="ilang">A.</th>
+                    <th colspan="5">Sumber Dana</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Crypto Currency</td>
+                    <td>2025</td>
+                    <td>Januari</td>
+                    <td>85.000.000</td>
+                    <td>-</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Web Developer</td>
+                    <td>2026</td>
+                    <td>Januari</td>
+                    <td>40.000.000</td>
+                    <td>-</td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Angkringan Starboy</td>
+                    <td>2026</td>
+                    <td>Januari</td>
+                    <td>15.000.000</td>
+                    <td>-</td>
+
+                </tr>
+                <tr>
+                    <th class="ilang">B.</th>
+                    <th colspan="5">Impian</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Healing Abroad</td>
+                    <td>2027</td>
+                    <td>Januari</td>
+                    <td>-</td>
+                    <td>20.000.000</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Beli Tanah</td>
+                    <td>2028</td>
+                    <td>Januari</td>
+                    <td>-</td>
+                    <td>150.000.000</td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Beli PC Gaming</td>
+                    <td>2026</td>
+                    <td>Januari</td>
+                    <td>-</td>
+                    <td>25.000.000</td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"><strong>Total Anggaran</strong></td>
+                    <td>140.000.00</td>
+                    <td>195.000.0000</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><strong>Kekurangan Anggaran</strong></td>
+                    <td colspan="2">55.000.000</td>
+                </tr>
+            </tfoot>
+        </table>
+    </center>
+</body>
+
+</html>
+
+
+<!-- 
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+<table>
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Sumber Dana / Kebutuhan</th>
+            <th>Target Waktu</th>
+            <th>Anggaran Dana (Rp)</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>
+                <table>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Bulan</th>
+                    </tr>
+                </table>
+            </th>
+            <th>
+                <table>
+                    <tr>
+                        <th>Masuk</th>
+                        <th>Keluar</th>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="4"><strong>A. Sumber Dana</strong></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tabungan Beli PC Gaming selama 5 tahun</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>2016</td>
+                        <td>Maret</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>15.000000</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tabungan Beli PC Gaming selama 5 tahun</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>2016</td>
+                        <td>Maret</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>15.000000</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Tabungan Beli PC Gaming selama 5 tahun</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>2016</td>
+                        <td>Maret</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>15.000000</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4"><strong>B. Sumber Dana</strong></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tabungan Beli PC Gaming selama 5 tahun</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>2016</td>
+                        <td>Maret</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>15.000000</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tabungan Beli PC Gaming selama 5 tahun</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>2016</td>
+                        <td>Maret</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>15.000000</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Tabungan Beli PC Gaming selama 5 tahun</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>2016</td>
+                        <td>Maret</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <tr>
+                        <td>15.000000</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"><strong>Total Anggaran</strong></td>
+            <td>
+                <table>
+                    <tr>
+                        <td>158.500.00</td>
+                        <td>250.0000</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Kekurangan Anggaran</strong></td>
+            <td>
+                <table>
+                    <tr>
+                        <td>90.0000</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </tfoot>
+</table> -->
