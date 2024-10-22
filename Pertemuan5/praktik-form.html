@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Tambahkan style untuk merapikan form */
+        form {
+            width: 60%;
+            /* Atur lebar form */
+            margin-top: 5px;
+            /* margin: auto; Membuat form berada di tengah */
+        }
+
+        div {
+            margin-bottom: 10px;
+            /* Memberikan jarak antar elemen */
+        }
+
+        /* label {
+            display: inline-block;
+            width: 100px;
+            
+        } */
+
+
+        select,
+        textarea {
+            width: 100%;
+            /* Lebar penuh untuk input, select, dan textarea */
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Data Kursus Siswa</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <form action="submit" name="add-data" method="post">
+
+                    <div>
+                        <label for="nm_lengkap">Nama Lengkap</label>
+                        <input type="text" name="nm_lengkap" id="nm_lengkap">
+                    </div>
+                    <div>
+                        <label for="tgllahir">Tanggal Lahir</label>
+                        <input type="date" name="tgllahir" id="tgllahir">
+                    </div>
+
+                    <label for="">Jenis Kelamin</label>
+                    <div>
+                        <input type="radio" id="laki-laki" name="laki-laki" value="laki-laki" />
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="perempuan" value="perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+
+                    <div>
+                        <label for="kelas">Kelas</label>
+                        <select name="kelas" id="kelas">
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="asal_sekolah">Asal Sekolah</label>
+                        <input type="text" name="asal_sekolah" id="asal_sekolah">
+                    </div>
+                    <div>
+                        <label for="asal_sekolah">Alamat</label>
+                        <textarea name="asal_sekolah" id="asal_sekolah" cols="25" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <label for="notelpon">No. Telepon</label>
+                        <input type="text" name="notelpon" id="notelpon">
+                    </div>
+                    <div>
+                        <label for="nm_ortu">Nama Orang Tua</label>
+                        <input type="text" name="nm_ortu" id="nm_ortu">
+                    </div>
+                    <div>
+                        <label for="pekerjaan_ortu">Pekerjaan Orang Tua</label>
+                        <input type="text" name="pekerjaan_ortu" id="pekerjaan_ortu">
+                    </div>
+                    <div>
+                        <label for="program">Program Kursus</label>
+                        <select name="program" id="program" multiple>
+                            <option value="inggris">Bahasa Inggris</option>
+                            <option value="matematika">Matematika</option>
+                            <option value="ipa">Ipa</option>
+                        </select>
+                    </div>
+
+                    <label for="">Hari Kursus</label>
+                    <div>
+                        <input type="checkbox" id="seninkamis" name="seninkamis" checked />
+                        <label for="seninkamis">Senin&Kamis</label>
+
+                        <input type="checkbox" id="selasajumat" name="selasajumat" />
+                        <label for="selasajumat">Selasa&Jumat</label>
+                        
+                        <input type="checkbox" id="rabusabtu" name="rabusabtu" />
+                        <label for="rabusabtu">Rabu&Sabtu</label>
+                    </div>
+                    
+                    <label for="">Waktu Kursus</label>
+                    <div>
+                        <input type="checkbox" id="siang" name="siang" checked />
+                        <label for="siang">14.00 - 15.30</label>
+
+                        <input type="checkbox" id="sore" name="sore" />
+                        <label for="sore">16.00-17.30</label>
+                        
+                        <input type="checkbox" id="malam" name="malam" />
+                        <label for="malam">19.00-20.30</label>
+                    </div>
+
+                    <input type="button" value="submit">
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

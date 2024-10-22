@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan ke 5</title>
+
+    <style>
+        /* Tambahkan style untuk merapikan form */
+        form {
+            width: 300px;
+            /* Atur lebar form */
+            margin-top: 10px;
+            /* margin: auto; Membuat form berada di tengah */
+        }
+
+        div {
+            margin-bottom: 10px;
+            /* Memberikan jarak antar elemen */
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            /* Lebar untuk label */
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            /* Lebar penuh untuk input, select, dan textarea */
+        }
+    </style>
+</head>
+
+<body>
+    <header>Formulir Pendataran peserta</header>
+    <main>
+
+    </main>
+
+    <footer>
+        <form action="submit" name="register" method="post">
+            <div>
+                <label for="name">Nama</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <br>
+            <div>
+                <label for="telpon">No. Telepon</label>
+                <input type="text" name="telpon" id="telpon">
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <br>
+            <div>
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" cols="25" rows="4"></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="pekerjaan">Pekerjaan</label>
+                <select name="pekerjaan" id="pekerjaan" multiple>
+                    <option value="PNS">PNS</option>
+                    <option value="Programer">Programer</option>
+                    <option value="Polisi">Polisi</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="pengalaman">Pengalaman</label>
+                <select name="pengalaman" id="pengalaman">
+                    <option value="Guru">Guru</option>
+                    <option value="Instruktur">Instruktur</option>
+                    <option value="Tutor">Tutor</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="agama">Agama</label>
+                <select name="agama" id="agama">
+                    <option value="1">Islam</option>
+                    <option value="2">Kristen</option>
+                    <option value="3">Hindu</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="tgllahir">Tanggal Lahir</label>
+                <input type="date" id="start" name="tgllahir" value="2024-01-01" min="2024-01-02" max="2024-12-31">
+            </div>
+            <br>
+            <input type="button" value="submit">
+        </form>
+    </footer>
+</body>
+
+</html>
