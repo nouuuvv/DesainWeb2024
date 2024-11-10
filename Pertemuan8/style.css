@@ -1,0 +1,135 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 380px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.02);
+}
+
+/* Link Styling */
+p {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+p a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
+.logo {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto 20px;
+}
+
+
+/* Hover effect for input fields */
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(98, 156, 195, 0.3);
+}
+
+/* Focus effect (remains the same) */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
