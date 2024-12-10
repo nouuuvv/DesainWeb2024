@@ -1,0 +1,127 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+.navbar div {
+    padding: 0 15px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex-container div {
+    background-color: #87b4ce;
+    padding: 5px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery div{
+    flex-direction: 1 1 calc(25%-10px);
+    height: 100px;
+    background-color: #95b9f0;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh; 
+}
+
+.header {
+    flex: 1 100%;
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: center;
+}
+
+.homee {
+    flex: 1 20%;
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+}
+.content {
+    flex: 2 20%;
+    background-color: chocolate;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    flex: 1 20%;
+    background-color: azure;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    flex: 1 100%;
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsif */
+    gap: 20px; /* Jarak antar kartu */
+}
+
+.card {
+    max-width: 380px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+
+
+.card:hover {
+    transform: scale(1.02);
+}
